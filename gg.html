@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>asking to know about me</title>
+</head>
+  <style>
+    #loading {
+      display: none;
+    }
+  </style>
+  <script>
+    function startLoading() {
+      document.getElementById("yesBtn").style.display = "none";
+      document.getElementById("loading").style.display = "block";
+
+      // Simulate loading for 1 second 
+      setTimeout(function() {
+        // Redirect to "ai.html"
+        window.location.href = "ai.html";
+
+      }, ); // 60 milliseconds = 1 second 
+    }
+  </script>
+<body>
+<h1><strong><em>Are you want to see my picture?</em></strong></h1>
+ <form onsubmit="startLoading(); return false;">
+    <br><button align=center id="yesBtn" type="yes">yes</button>
+    <div id="loading"></div>
+  </form>
+  <style>
+  body{
+    background-color:#ffe5e5;
+  }
+h1{
+  color: #0D20F4;
+  text-align: center;
+}
+p{
+  color: #D11EE7;
+  text-align: center;
+  height: 5px;
+ 
+}
+  body {
+    font-family: Arial, sans-serif;
+      
+      
+      height: 100vh;
+      margin: 0 auto;
+  }
+  
+  
+  
+  button {
+    background-color: #CD1266;
+    padding: 8px 15px;
+    color: whitesmoke;
+    border: #3600FF;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    margin: 0 auto;
+    display:block;
+  }
+
+   #loading {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #00FF30;
+    border-top-color: transparent;
+    animation: circle 1s linear 100;
+    
+  }
+  
+  @keyframes circle {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+    
+  }
+</style>
+</body>
+
+</html>

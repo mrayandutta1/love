@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>thanks</title>
+     <style>
+    #loading {
+      display: none;
+    }
+  </style>
+  <script>
+    function startLoading() {
+      document.getElementById("acceptBtn").style.display = "none";
+      document.getElementById("loading").style.display =" Block";
+
+      // Simulate loading for 1 minute
+      setTimeout(function() {
+        // Redirect to "gggg.html"
+        window.location.href = "gggg.html";
+
+      }, ); // 60,000 milliseconds = 1 minute
+    }
+  </script>
+</head>
+
+<body>
+  <h2>THANKS FOR ACCEPTING MY PROPOSAL💖</h2>
+ <audio src="></audio>
+    <form onsubmit="startLoading(); return false;">
+    <br><button id="acceptBtn" type="accept">refress</button>
+    <div id="loading"></div>
+  </form>
+  <style>
+    h2{
+      color:#EE0774;
+      text-align: center;
+      
+    }
+    body{
+background-color:#ffe5e5;
+}
+    button {
+   
+    padding: 8px 15px;
+   background-color: #03E4FF;
+    border-color: #FF0303;
+    border-style: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    border-color: transparent;
+    display: block;
+  }
+
+
+  #loading {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #000090;
+    border-top-color: transparent;
+    animation: circle 1s linear 10;
+  }
+  
+  @keyframes circle {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  </style>
+
+</body>
+
+</html>

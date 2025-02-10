@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+    <style>
+    #loading {
+      display: none;
+    }
+  </style>
+  <script>
+    function startLoading() {
+      document.getElementById("yesBtn").style.display = "none";
+      document.getElementById("loading").style.display = "block";
+
+      // Simulate loading for 1 minute
+      setTimeout(function() {
+        // Redirect to "about.html"
+        window.location.href = "about.html";
+
+      }, ); // 60,000 milliseconds = 1 minute
+    }
+  </script>
+</head>
+
+<body>
+<h1>are you know English?</h1>
+ <form onsubmit="startLoading(); return false;">
+    <br><button id="yesBtn" type="yes">yes</button>
+    <div id="loading"></div>
+  </form>
+  <style>
+h1{
+  color: #0D20F4;
+  text-align: center;
+}
+p{
+  color: #D11EE7;
+  text-align: center;
+  height: 5px;
+ 
+}
+  body {
+    font-family: Arial, sans-serif;
+     display: top;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+  }
+  
+  
+  
+  button {
+    background-color: #00FF30;
+    padding: 8px 15px;
+    color: whitesmoke;
+    border: #3600FF;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    align-self: center;
+    margin: 0 auto;
+    display:block;
+  }
+  body{
+    background-color:#ffe5e5;
+  }
+
+  #loading {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #00FF30;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</body>
+
+</html>

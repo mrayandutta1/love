@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>asking to know</title>
+   <style>
+    #loading {
+      display: none;
+    }
+  </style>
+  <script>
+    function startLoading() {
+      document.getElementById("acceptBtn").style.display = "none";
+      document.getElementById("loading").style.display =" Block";
+
+      // Simulate loading for 1 minute
+      setTimeout(function() {
+        // Redirect to "exra.html"
+        window.location.href = "exra.html";
+
+      }, ); // 60,000 milliseconds = 1 minute
+    }
+  </script>
+</head>
+<body>
+  <h1>About of me</h1>
+  <h2>Do you want to know about me</h2>
+    <form onsubmit="startLoading(); return false;">
+    <br><button id="acceptBtn" type="accept">yes</button>
+    <div id="loading"></div>
+  </form>
+  
+  <style>
+  body {
+  background-color: #ffe5e5;
+}
+    h1{
+      text-align: center;
+      color: lawngreen;
+    }
+    h2{
+      text-align: center;
+      color:#6E00FF;
+    }
+    body {
+    font-family: Arial, sans-serif;
+     
+      color: #963373;
+      height: 100vh;
+      margin: 0 auto;
+  } 
+  
+  
+  
+  button {
+    background-color: #00FF30;
+    padding: 8px 15px;
+    color: whitesmoke;
+    border: #3600FF;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    
+  }
+
+
+  #loading {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #00FF30;
+    border-top-color: transparent;
+    animation: circle 1s linear 100;
+  }
+  
+  @keyframes circle {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  </style>
+  </body>
+  </html>

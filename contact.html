@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>contact</title>
+</head>
+   <script>
+    function startLoading() {
+      document.getElementById("submitBtn").style.display = "none";
+      document.getElementById("loading").style.display = "block";
+
+      // Simulate loading for 1 minute
+      setTimeout(function() {
+        // Redirect to "thank.html"
+        window.location.href = "thank.html";
+
+      }, ); // 60,000 milliseconds = 1 minute
+    }
+  </script>
+<body>
+  <p>You can contact me  from these links</p><br>
+
+
+
+  <a href="https://www.instagram.com/ayandutta3383?igsh=YzljYTk1ODg3Zg=="> INSTAGRAM(1)</a><br><br>
+  <a href="https://www.instagram.com/duttaayan169?igsh=MWs5cXQxaGxraGF1dQ==">INSTAGRAM(2)</a><br><br>
+  
+ <a href="https://www.facebook.com/profile.php?id=61557716514579&mibextid=LQQJ4d">
+ FACEBOOK
+ </a><br><br>
+ <a href="https://www.threads.net/@ayandutta3383">Threads</a><br>
+    <button id="submitBtn" onclick="startLoading()">next</button>
+    <div id="loading" ></div>
+
+  </form>
+<style type="text/css" media="all">
+  p{
+    color: rgba(32, 58, 140, 1);
+    text-align: center;
+  }
+  body{
+  background-color:#ffe5e5;
+  }
+  button {
+      background-color: #01AAFF;
+      width: 100px;
+      height: 37px;
+      border-radius: 5px;
+margin: 0 auto;
+display: block;
+      border-color:hsla(225, 87%, 32%, 0);
+   #loading {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #01AAFF;
+    border-top-color: transparent;
+    animation: circle 1s linear 100;
+  }
+  
+  @keyframes circle {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+</style>
+</body>
+
+</html>

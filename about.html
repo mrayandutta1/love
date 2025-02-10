@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About myself</title>
+      <script>
+    function startLoading() {
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("loading").style.display = "block";
+
+      // Simulate loading for 1 minute
+      setTimeout(function() {
+        // Redirect to "gg.html"
+        window.location.href = "gg.html";
+
+      }, ); // 60,000 milliseconds = 1 minute
+    }
+  </script>
+</head>
+<body>
+<h1>about me</h1>
+<strong></strong><strong><h2>Name: <em>Ayan Dutta</em></h2></strong></strong>
+   <strong></strong><strong><h2>Father's name: <em>Sudip Dutta</em></h2></strong></strong>
+<strong></strong><strong><h2>Mother's name: <em>Jhumki Dutta</em></h2></strong></strong>
+   
+   
+    <strong><h2>Date of Birth:<em>31/01/2011</em></h2></strong>
+     <strong><h2>favourite subject:<em>Math</em></h2></strong>
+     
+<strong><h2>want to be :<em>cyber security expert    </em></h2></strong>
+<strong><h2>hobby:<em>web development, hacking</em></h2></strong>
+<tag>
+  <!--Tab to edit-->
+</tag>
+
+<form onsubmit="startLoading(); return false;">
+    <br><button id="nextBtn" type="next">next</button>
+    <div id="loading"></div>
+  </form>
+     <style>
+     body{
+background-color:#ffe5e5;
+}
+     a{
+       text-align: center
+     }
+         #loading {
+      display: none;
+    }
+       h1{
+         text-align: center;
+         color: #1150DB;
+          
+       }
+       h2{
+         color: #24DB11
+       }
+       em{
+         color: #8211DB
+       }
+       button {
+    background-color: #00FF30;
+    padding: 8px 15px;
+    color: whitesmoke;
+    border: #3600FF;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    margin: 0 auto;
+    display:block;
+  
+       }
+      #loading {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #057AFF;
+    border-top-color: transparent;
+    animation: circle 1s linear 100;
+  }
+  
+  @keyframes circle {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+     </style>
+     
+</body>
+</html>
